@@ -11,33 +11,34 @@ import Darwin
 
 let pi = M_PI
 
-@IBDesignable class SiriWaveformView: UIView
+@IBDesignable
+public class SiriWaveformView: UIView
 {
     private var _phase: CGFloat = 0.0
     private var _amplitude: CGFloat = 0.0
 
-    @IBInspectable var waveColor = UIColor.whiteColor()
-    @IBInspectable var numberOfWaves = 5
-    @IBInspectable var primaryWaveLineWidth: CGFloat = 3.0
-    @IBInspectable var secondaryWaveLineWidth: CGFloat = 1.0
-    @IBInspectable var idleAmplitude: CGFloat = 0.01
-    @IBInspectable var frequency: CGFloat = 1.5
-    @IBInspectable var density: CGFloat = 5
-    @IBInspectable var phaseShift: CGFloat = -0.15
+    @IBInspectable public var waveColor = UIColor.whiteColor()
+    @IBInspectable public var numberOfWaves = 5
+    @IBInspectable public var primaryWaveLineWidth: CGFloat = 3.0
+    @IBInspectable public var secondaryWaveLineWidth: CGFloat = 1.0
+    @IBInspectable public var idleAmplitude: CGFloat = 0.01
+    @IBInspectable public var frequency: CGFloat = 1.5
+    @IBInspectable public var density: CGFloat = 5
+    @IBInspectable public var phaseShift: CGFloat = -0.15
 
-    @IBInspectable var amplitude: CGFloat {
+    @IBInspectable public var amplitude: CGFloat {
         get {
             return _amplitude
         }
     }
 
-    func updateWithLevel(level: CGFloat) {
+    public func updateWithLevel(level: CGFloat) {
         _phase += phaseShift
         _amplitude = fmax(level, idleAmplitude)
         setNeedsDisplay()
     }
 
-    override func drawRect(rect: CGRect) {
+    override public func drawRect(rect: CGRect) {
         var context = UIGraphicsGetCurrentContext()
         CGContextClearRect(context, bounds)
 
