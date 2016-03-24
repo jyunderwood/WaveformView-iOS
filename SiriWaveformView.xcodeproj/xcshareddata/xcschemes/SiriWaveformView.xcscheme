@@ -20,20 +20,6 @@
                ReferencedContainer = "container:SiriWaveformView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AB86ADAF1AF3029D00DB42C8"
-               BuildableName = "SiriWaveformViewTests.xctest"
-               BlueprintName = "SiriWaveformViewTests"
-               ReferencedContainer = "container:SiriWaveformView.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -42,16 +28,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AB86ADAF1AF3029D00DB42C8"
-               BuildableName = "SiriWaveformViewTests.xctest"
-               BlueprintName = "SiriWaveformViewTests"
-               ReferencedContainer = "container:SiriWaveformView.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
