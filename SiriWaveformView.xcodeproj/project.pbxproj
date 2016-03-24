@@ -8,28 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		AB86ADAB1AF3029C00DB42C8 /* SiriWaveformView.h in Headers */ = {isa = PBXBuildFile; fileRef = AB86ADAA1AF3029C00DB42C8 /* SiriWaveformView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AB86ADB11AF3029D00DB42C8 /* SiriWaveformView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB86ADA51AF3029C00DB42C8 /* SiriWaveformView.framework */; };
-		AB86ADB81AF3029D00DB42C8 /* SiriWaveformViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB86ADB71AF3029D00DB42C8 /* SiriWaveformViewTests.swift */; };
 		AB86ADC21AF302AC00DB42C8 /* SiriWaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB86ADC11AF302AC00DB42C8 /* SiriWaveformView.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		AB86ADB21AF3029D00DB42C8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AB86AD9C1AF3029C00DB42C8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AB86ADA41AF3029C00DB42C8;
-			remoteInfo = SiriWaveformView;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		AB86ADA51AF3029C00DB42C8 /* SiriWaveformView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SiriWaveformView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB86ADA91AF3029C00DB42C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB86ADAA1AF3029C00DB42C8 /* SiriWaveformView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SiriWaveformView.h; sourceTree = "<group>"; };
-		AB86ADB01AF3029D00DB42C8 /* SiriWaveformViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SiriWaveformViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB86ADB61AF3029D00DB42C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AB86ADB71AF3029D00DB42C8 /* SiriWaveformViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriWaveformViewTests.swift; sourceTree = "<group>"; };
 		AB86ADC11AF302AC00DB42C8 /* SiriWaveformView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiriWaveformView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,14 +26,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AB86ADAD1AF3029D00DB42C8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AB86ADB11AF3029D00DB42C8 /* SiriWaveformView.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -56,7 +33,6 @@
 			isa = PBXGroup;
 			children = (
 				AB86ADA71AF3029C00DB42C8 /* SiriWaveformView */,
-				AB86ADB41AF3029D00DB42C8 /* SiriWaveformViewTests */,
 				AB86ADA61AF3029C00DB42C8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,7 +41,6 @@
 			isa = PBXGroup;
 			children = (
 				AB86ADA51AF3029C00DB42C8 /* SiriWaveformView.framework */,
-				AB86ADB01AF3029D00DB42C8 /* SiriWaveformViewTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,23 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				AB86ADA91AF3029C00DB42C8 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		AB86ADB41AF3029D00DB42C8 /* SiriWaveformViewTests */ = {
-			isa = PBXGroup;
-			children = (
-				AB86ADB71AF3029D00DB42C8 /* SiriWaveformViewTests.swift */,
-				AB86ADB51AF3029D00DB42C8 /* Supporting Files */,
-			);
-			path = SiriWaveformViewTests;
-			sourceTree = "<group>";
-		};
-		AB86ADB51AF3029D00DB42C8 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				AB86ADB61AF3029D00DB42C8 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -137,37 +95,17 @@
 			productReference = AB86ADA51AF3029C00DB42C8 /* SiriWaveformView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		AB86ADAF1AF3029D00DB42C8 /* SiriWaveformViewTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AB86ADBE1AF3029D00DB42C8 /* Build configuration list for PBXNativeTarget "SiriWaveformViewTests" */;
-			buildPhases = (
-				AB86ADAC1AF3029D00DB42C8 /* Sources */,
-				AB86ADAD1AF3029D00DB42C8 /* Frameworks */,
-				AB86ADAE1AF3029D00DB42C8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AB86ADB31AF3029D00DB42C8 /* PBXTargetDependency */,
-			);
-			name = SiriWaveformViewTests;
-			productName = SiriWaveformViewTests;
-			productReference = AB86ADB01AF3029D00DB42C8 /* SiriWaveformViewTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		AB86AD9C1AF3029C00DB42C8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Jonathan Underwood";
 				TargetAttributes = {
 					AB86ADA41AF3029C00DB42C8 = {
-						CreatedOnToolsVersion = 6.3.1;
-					};
-					AB86ADAF1AF3029D00DB42C8 = {
 						CreatedOnToolsVersion = 6.3.1;
 					};
 				};
@@ -185,20 +123,12 @@
 			projectRoot = "";
 			targets = (
 				AB86ADA41AF3029C00DB42C8 /* SiriWaveformView */,
-				AB86ADAF1AF3029D00DB42C8 /* SiriWaveformViewTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		AB86ADA31AF3029C00DB42C8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AB86ADAE1AF3029D00DB42C8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -216,23 +146,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AB86ADAC1AF3029D00DB42C8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AB86ADB81AF3029D00DB42C8 /* SiriWaveformViewTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		AB86ADB31AF3029D00DB42C8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AB86ADA41AF3029C00DB42C8 /* SiriWaveformView */;
-			targetProxy = AB86ADB21AF3029D00DB42C8 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		AB86ADB91AF3029D00DB42C8 /* Debug */ = {
@@ -257,6 +171,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -335,6 +250,7 @@
 				INFOPLIST_FILE = SiriWaveformView/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jyunderwood.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -352,38 +268,9 @@
 				INFOPLIST_FILE = SiriWaveformView/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jyunderwood.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		AB86ADBF1AF3029D00DB42C8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SiriWaveformViewTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		AB86ADC01AF3029D00DB42C8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SiriWaveformViewTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -406,14 +293,7 @@
 				AB86ADBD1AF3029D00DB42C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		AB86ADBE1AF3029D00DB42C8 /* Build configuration list for PBXNativeTarget "SiriWaveformViewTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AB86ADBF1AF3029D00DB42C8 /* Debug */,
-				AB86ADC01AF3029D00DB42C8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
