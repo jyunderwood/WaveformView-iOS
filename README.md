@@ -1,9 +1,19 @@
-## SiriWaveformView Swift
+# WaveformView iOS
 
-A UIView subclass that reproduces the waveform effect seen in Siri on iOS 7 and 8.
+A UIView subclass, in Swift, that reproduces the waveform effect seen in Siri on iOS 7 and 8.
 
-A Swift port of [SCSiriWaveformView](https://github.com/stefanceriu/SCSiriWaveformView), which it self is based on [SISinusWaveView](https://github.com/raffael/SISinusWaveView).
-
-Used in the example application [Talkboy for iOS](https://github.com/jyunderwood/Talkboy-iOS)
+Originally a Swift and iOS port of [SISinusWaveView](https://github.com/raffael/SISinusWaveView) that also removed the requirement of `EZAudio`. This project includes a simple demo application but it's also used in the example application [Talkboy for iOS](https://github.com/jyunderwood/Talkboy-iOS).
 
 ![Talkboy Demo](https://raw.githubusercontent.com/jyunderwood/Talkboy-iOS/master/assets/talkboy-demo.gif)
+
+## Change Log
+
+- __2.0__
+  - Updated for Swift 3.0
+  - Now a proper iOS framework
+  - Includes a simplified example application
+  - Renamed from SiriWaveformView to WaveformView
+- __1.2__
+  - Updated for Swift 2.2
+- __1.0__
+  - Initial release
