@@ -8,6 +8,8 @@ Originally a Swift and iOS port of [SISinusWaveView](https://github.com/raffael/
 
 ## Change Log
 
+- __2.0.1__
+  - Remove unneeded get of current context within the wave loop
 - __2.0__
   - Updated for Swift 3.0
   - Now a proper iOS framework
