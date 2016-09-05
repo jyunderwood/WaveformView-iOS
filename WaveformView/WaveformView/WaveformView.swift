@@ -38,17 +38,15 @@ public class WaveformView: UIView {
     }
 
     override public func draw(_ rect: CGRect) {
-        let context = UIGraphicsGetCurrentContext()
-        context?.clear(bounds)
+        let context = UIGraphicsGetCurrentContext()!
+        context.clear(bounds)
 
         backgroundColor?.set()
-        context?.fill(rect)
+        context.fill(rect)
 
         // Draw multiple sinus waves, with equal phases but altered
         // amplitudes, multiplied by a parable function.
         for waveNumber in 0...numberOfWaves {
-            let context = UIGraphicsGetCurrentContext()!
-
             context.setLineWidth((waveNumber == 0 ? primaryWaveLineWidth : secondaryWaveLineWidth))
 
             let halfHeight = bounds.height / 2.0
