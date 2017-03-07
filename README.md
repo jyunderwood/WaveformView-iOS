@@ -27,6 +27,8 @@ Then follow the [iOS building instructions](https://github.com/Carthage/Carthage
 
 ## Change Log
 
+- __2.0.3__
+  - Remove 10.0 as the deployment target
 - __2.0.2__
   - Framework scheme is now shared for Carthage support
 - __2.0.1__
