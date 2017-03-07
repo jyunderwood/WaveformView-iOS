@@ -12,32 +12,32 @@ import Darwin
 let pi = M_PI
 
 @IBDesignable
-public class WaveformView: UIView {
+open class WaveformView: UIView {
     fileprivate var _phase: CGFloat = 0.0
     fileprivate var _amplitude: CGFloat = 0.3
 
-    @IBInspectable public var waveColor: UIColor = .black
-    @IBInspectable public var numberOfWaves = 5
-    @IBInspectable public var primaryWaveLineWidth: CGFloat = 3.0
-    @IBInspectable public var secondaryWaveLineWidth: CGFloat = 1.0
-    @IBInspectable public var idleAmplitude: CGFloat = 0.01
-    @IBInspectable public var frequency: CGFloat = 1.25
-    @IBInspectable public var density: CGFloat = 5
-    @IBInspectable public var phaseShift: CGFloat = -0.15
+    @IBInspectable open var waveColor: UIColor = .black
+    @IBInspectable open var numberOfWaves = 5
+    @IBInspectable open var primaryWaveLineWidth: CGFloat = 3.0
+    @IBInspectable open var secondaryWaveLineWidth: CGFloat = 1.0
+    @IBInspectable open var idleAmplitude: CGFloat = 0.01
+    @IBInspectable open var frequency: CGFloat = 1.25
+    @IBInspectable open var density: CGFloat = 5
+    @IBInspectable open var phaseShift: CGFloat = -0.15
 
-    @IBInspectable public var amplitude: CGFloat {
+    @IBInspectable open var amplitude: CGFloat {
         get {
             return _amplitude
         }
     }
 
-    public func updateWithLevel(_ level: CGFloat) {
+    open func updateWithLevel(_ level: CGFloat) {
         _phase += phaseShift
         _amplitude = fmax(level, idleAmplitude)
         setNeedsDisplay()
     }
 
-    override public func draw(_ rect: CGRect) {
+    override open func draw(_ rect: CGRect) {
         let context = UIGraphicsGetCurrentContext()!
         context.clear(bounds)
 
