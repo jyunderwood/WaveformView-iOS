@@ -27,6 +27,8 @@ Then follow the [iOS building instructions](https://github.com/Carthage/Carthage
 
 ## Change Log
 
+- __2.0.4__
+  - Swift 4 compatibility
 - __2.0.3__
   - Remove 10.0 as the deployment target
 - __2.0.2__

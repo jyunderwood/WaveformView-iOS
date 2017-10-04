@@ -9,7 +9,7 @@
 import UIKit
 import Darwin
 
-let pi = M_PI
+let pi = Double.pi
 
 @IBDesignable
 public class WaveformView: UIView {
