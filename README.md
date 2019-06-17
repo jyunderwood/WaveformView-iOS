@@ -27,6 +27,11 @@ Then follow the [iOS building instructions](https://github.com/Carthage/Carthage
 
 ## Change Log
 
+- __2.0.5__
+  - Swift 5 compatibility
+  - SPM compatibility
+  - Example project suppression
+
 - __2.0.4__
   - Swift 4 compatibility
 - __2.0.3__

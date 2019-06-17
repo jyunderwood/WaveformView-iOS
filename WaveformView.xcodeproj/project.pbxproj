@@ -6,16 +6,9 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		AB0CB0CF1D7C78E200C74A8B /* WaveformView.h in Headers */ = {isa = PBXBuildFile; fileRef = AB0CB0CD1D7C78E200C74A8B /* WaveformView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AB2D58FA1D7C7EB600684DA8 /* WaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2D58F91D7C7EB600684DA8 /* WaveformView.swift */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
+		1AC1587122B7BEB000706171 /* WaveformView */ = {isa = PBXFileReference; lastKnownFileType = folder; path = WaveformView; sourceTree = "<group>"; };
 		AB0CB0CA1D7C78E200C74A8B /* WaveformView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WaveformView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB0CB0CD1D7C78E200C74A8B /* WaveformView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaveformView.h; sourceTree = "<group>"; };
-		AB0CB0CE1D7C78E200C74A8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AB2D58F91D7C7EB600684DA8 /* WaveformView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaveformView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,7 +25,7 @@
 		AB0CB0C01D7C78E200C74A8B = {
 			isa = PBXGroup;
 			children = (
-				AB0CB0CC1D7C78E200C74A8B /* WaveformView */,
+				1AC1587122B7BEB000706171 /* WaveformView */,
 				AB0CB0CB1D7C78E200C74A8B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,16 +38,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AB0CB0CC1D7C78E200C74A8B /* WaveformView */ = {
-			isa = PBXGroup;
-			children = (
-				AB2D58F91D7C7EB600684DA8 /* WaveformView.swift */,
-				AB0CB0CD1D7C78E200C74A8B /* WaveformView.h */,
-				AB0CB0CE1D7C78E200C74A8B /* Info.plist */,
-			);
-			path = WaveformView;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -62,7 +45,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB0CB0CF1D7C78E200C74A8B /* WaveformView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,7 +75,7 @@
 		AB0CB0C11D7C78E200C74A8B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = "Jonathan Underwood";
 				TargetAttributes = {
 					AB0CB0C91D7C78E200C74A8B = {
@@ -108,6 +90,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = AB0CB0C01D7C78E200C74A8B;
@@ -135,7 +118,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB2D58FA1D7C7EB600684DA8 /* WaveformView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +128,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -155,6 +138,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -162,6 +146,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -205,6 +190,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -214,6 +200,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -221,6 +208,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -261,7 +249,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = WaveformView/Info.plist;
+				INFOPLIST_FILE = WaveformView/Sources/WaveformView/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -281,7 +269,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = WaveformView/Info.plist;
+				INFOPLIST_FILE = WaveformView/Sources/WaveformView/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
