@@ -9,8 +9,6 @@
 import UIKit
 import Darwin
 
-let pi = Double.pi
-
 @IBDesignable
 public class WaveformView: UIView {
     fileprivate var _phase: CGFloat = 0.0
@@ -55,7 +53,7 @@ public class WaveformView: UIView {
 
             let maxAmplitude = halfHeight - 4.0 // 4 corresponds to twice the stroke width
 
-            // Progress is a value between 1.0 and -0.5, determined by the current wave idx, 
+            // Progress is a value between 1.0 and -0.5, determined by the current wave idx,
             // which is used to alter the wave's amplitude.
             let progress: CGFloat = 1.0 - CGFloat(waveNumber) / CGFloat(numberOfWaves)
             let normedAmplitude = (1.5 * progress - 0.5) * amplitude
@@ -67,10 +65,10 @@ public class WaveformView: UIView {
             while x < width + density {
                 // Use a parable to scale the sinus wave, that has its peak in the middle of the view.
                 let scaling = -pow(1 / mid * (x - mid), 2) + 1
-                let tempCasting: CGFloat = 2.0 * CGFloat(pi) * CGFloat(x / width) * frequency + _phase
+                let tempCasting: CGFloat = 2.0 * .pi * CGFloat(x / width) * frequency + _phase
                 let y = scaling * maxAmplitude * normedAmplitude * CGFloat(sinf(Float(tempCasting))) + halfHeight
 
-                if x == 0 {
+                if x.isZero {
                     context.move(to: CGPoint(x: x, y: y))
                 } else {
                     context.addLine(to: CGPoint(x: x, y: y))
