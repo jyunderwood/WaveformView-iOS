@@ -22,10 +22,10 @@ class ViewController: UIViewController {
         audioRecorder.record()
 
         let displayLink = CADisplayLink(target: self, selector: #selector(updateMeters))
-        displayLink.add(to: RunLoop.current, forMode: RunLoopMode.commonModes)
+        displayLink.add(to: RunLoop.current, forMode: RunLoop.Mode.common)
     }
 
-    func updateMeters() {
+    @objc func updateMeters() {
         audioRecorder.updateMeters()
         let normalizedValue = pow(10, audioRecorder.averagePower(forChannel: 0) / 20)
         waveformView.updateWithLevel(CGFloat(normalizedValue))
@@ -39,7 +39,7 @@ class ViewController: UIViewController {
             AVEncoderAudioQualityKey: AVAudioQuality.min.rawValue as AnyObject
         ]
 
-        try! AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayAndRecord)
+        try! AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playAndRecord)
 
         let audioRecorder = try! AVAudioRecorder(url: filePath, settings: recorderSettings)
         audioRecorder.isMeteringEnabled = true
