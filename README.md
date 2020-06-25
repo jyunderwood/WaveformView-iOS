@@ -12,6 +12,10 @@ Originally a Swift and iOS port of [SISinusWaveView](https://github.com/raffael/
 
 You can install Carthage with [Homebrew](http://brew.sh/) using the following command:
 
+## Install via Swift Package Manager
+
+Open Xcode and Select from menu to `File > Swift Packages > Add Package Depende`.
+
 ```bash
 $ brew update
 $ brew install carthage
